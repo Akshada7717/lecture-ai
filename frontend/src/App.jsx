@@ -133,9 +133,19 @@ export default function App() {
     setSelected(v.id); setResult(null); fetchResults(v.id)
   }
 
-  const exportPdf = (vid) => {
-    window.open(API + '/api/export/' + vid)
-  }
+  const exportPdf = async (vid) => {
+  const response = await axios.get(API + '/api/export/' + vid, {
+    responseType: 'blob',
+    headers: { 'ngrok-skip-browser-warning': 'true' }
+  })
+  const url = window.URL.createObjectURL(new Blob([response.data]))
+  const link = document.createElement('a')
+  link.href = url
+  link.setAttribute('download', vid + '_quiz.pdf')
+  document.body.appendChild(link)
+  link.click()
+  link.remove()
+}
 
   return (
     <div style={s.wrap}>
