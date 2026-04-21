@@ -71,8 +71,7 @@ def upload():
             "transcript": transcript,
             "summary": summary,
             "keywords": keywords,
-            "questions": questions,
-            "quiz_link": f"http://192.168.1.18:5173/quiz/{video_id}"
+            "questions": questions,            "quiz_link": f"https://lecture-ai-rose.vercel.app/quiz/{video_id}"
         })
 
     except Exception as e:
@@ -125,7 +124,7 @@ def upload_youtube():
             "summary": summary,
             "keywords": keywords,
             "questions": questions,
-            "quiz_link": f"http://192.168.1.18:5173/quiz/{video_id}"
+            "quiz_link": f"https://lecture-ai-rose.vercel.app/quiz/{video_id}"
         })
 
     except Exception as e:

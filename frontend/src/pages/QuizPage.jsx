@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-const API = 'http://192.168.1.18:8080' // <-- change this to your backend URL
+const API = 'https://fondness-chafe-campfire.ngrok-free.dev' // <-- change this to your backend URL
 
 export default function QuizPage() {
   const { videoId } = useParams()

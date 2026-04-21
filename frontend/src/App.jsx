@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API = 'http://192.168.1.18:8080' // <-- change this to your backend URL
+const API = 'https://fondness-chafe-campfire.ngrok-free.dev' // <-- change this to your backend URL
 
 const s = {
   wrap: { minHeight: '100vh', background: '#f8f9fb' },
