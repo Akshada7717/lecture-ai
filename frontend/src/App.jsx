@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+axios.defaults.headers.common['ngrok-skip-browser-warning'] = 'true'
 const API = 'https://fondness-chafe-campfire.ngrok-free.dev' // <-- change this to your backend URL
 
 const s = {
