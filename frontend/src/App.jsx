@@ -154,7 +154,7 @@ export default function App() {
           <span style={s.logo}>LectureAI</span>
           <span style={s.logoBadge}>Admin</span>
         </div>
-        <span style={{ fontSize: 13, color: '#aaa' }}>Multilingual Lecture Summarizer & Quiz Generator</span>
+        <span style={{ fontSize: 13, color: '#aaa' }}>Lecture Summarizer & Quiz Generator</span>
       </nav>
 
       <div style={s.main}>
